@@ -1,13 +1,21 @@
-# 🌼 Idaho-Wildflowers 🌼
+# 🌼 Idaho Wildflower Knowledge Base 🌼
 
-## NotebookLM experiments based on wildflowers I've found in Idaho
+## NotebookLM AI experiments based on wildflowers I've found in Idaho
 
-*The dataset is a collection of resources that serves as a comprehensive guide to identifying and understanding Idaho’s diverse flora.*
+This repo contains structured outputs generated with NotebookLM from a curated set of Idaho wildflower resources, including field guides, government publications, and personal field notes and observations. The dataset is a collection of resources that serves as a comprehensive guide to identifying and understanding Idaho’s diverse flora.
 
-*It begins by listing several essential field guides and digital applications that help enthusiasts locate and classify regional wildflowers. The text then transitions into a personal catalog of specific species, highlighting both native plants like Prairie Smoke and invasive species such as Hound’s-tongue. Each entry provides valuable context regarding the ecological roles of plants, such as their ability to fix nitrogen or attract essential pollinators.*
+It serves as a lightweight example of AI-assisted knowledge synthesis, structured data extraction, and atomated documentation workflows.
 
-*Additionally, the author notes the practical uses and dangers of these plants, distinguishing between edible varieties like Miner's Lettuce and those that are highly toxic. Ultimately, these sources blend scientific identification with historical and medicinal anecdotes to educate readers on the natural landscape.*
+### Contents
+- Infographic (visual summary)
+- Report (synthesized insights)
+- CSV dataset (common + botanical names, traits)
+  
+### Automation
+A simple pipeline using GitHub Actions converts the CSV into a clean Markdown document.
 
-This graphc turned out pretty nice, although there are some mispelled words.
+
+## AI Generated Infographic
+*Cool idea, but contains typographical errors*
 
 ![Idaho wildflowers](resources/infographic.jpg)
