@@ -28,7 +28,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           
-          git add data/table.csv docs/table.md
+          git add data/wildflowers+noxious_weeds.csv docs/wildflowers+noxious_weeds.md
           
           git diff --cached --quiet || git commit -m "Sync Google Sheet"
           git push
