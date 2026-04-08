@@ -1,0 +1,34 @@
+name: Sync Google Sheet
+
+on:
+  # schedule:
+  #   - cron: "0 * * * *"   # every hour
+  workflow_dispatch: # manual trigger 
+
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # - name: Download CSV
+      #   run: |
+      #     curl -L "https://docs.google.com/spreadsheets/d/<SHEET_ID>/pub?output=csv" \
+      #     -o data/table.csv
+
+      - name: Convert CSV → Markdown
+        run: |
+          python3 scripts/csv_to_md.py data/wildflowers+noxious_weeds.csv docs/wildflowers+noxious_weeds.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          
+          git add data/table.csv docs/table.md
+          
+          git diff --cached --quiet || git commit -m "Sync Google Sheet"
+          git push
