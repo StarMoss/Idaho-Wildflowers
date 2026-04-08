@@ -10,4 +10,4 @@
 
 This graphc turned out pretty nice, although there are some mispelled words.
 
-![Idaho wildflowers](resources/unnamed-2.jpg)
+![Idaho wildflowers](resources/infographic.jpg)
